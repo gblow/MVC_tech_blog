@@ -13,14 +13,14 @@ html {
 
 main,
 .site-name {
-    background-color: #d4ad36;
+    background-color: #b8cba2;
     text-align: center;
 }
 
 a,
 .btn-no-style,
 #comment-subtitle {
-    color: #997020;
+    color: #b8cba2;
 }
 
 a:hover,
@@ -35,7 +35,7 @@ a {
 }
 
 button {
-    background-color: #454a50;
+    background-color: #225ca3;
     border: 0;
     padding: 1%;
     color: white;
@@ -46,7 +46,7 @@ button {
 }
 
 button:hover {
-    background-color: #eb7434;
+    background-color: #3486eb;
 }
 
 .post-list {
@@ -69,7 +69,7 @@ input {
 textarea:focus,
 input:focus {
     outline: none;
-    border: 1px solid #1a1c1e;
+    border: 1px solid #3486eb;
 }
 
 textarea {
