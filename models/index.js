@@ -4,12 +4,20 @@ const Post = require('./posts');
 const Blog = require('./blogs');
 
 
+User.hasMany(Blog, {
+    foreignKey: 'user_id'
+})
+
 User.hasMany(Post, {
     foreignKey: 'user_id'
 })
 
-User.hasMany(Blog, {
+Blog.belongsTo(User, {
     foreignKey: 'user_id'
+})
+
+Blog.belongsTo(Post, {
+    foreignKey: 'post_id'
 })
 
 Post.belongsTo(User, {
@@ -20,13 +28,6 @@ Post.hasMany(Blog, {
     foreignKey: 'post_id'
 })
 
-Blog.belongsTo(User, {
-    foreignKey: 'user_id'
-})
-
-Blog.belongsTo(Post, {
-    foreignKey: 'post_id'
-})
 
 
 module.exports = {
