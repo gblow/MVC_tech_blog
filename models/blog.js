@@ -5,7 +5,7 @@ const {
 const sequelize = require('../config/connection');
 
 
-class Comment extends Model {}
+class Blog extends Model {}
 
 blog.init({
     id: {
