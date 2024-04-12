@@ -7,14 +7,14 @@ const sequelize = require('../config/connection');
 
 class Comment extends Model {}
 
-Comment.init({
+blog.init({
     id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
     },
-    comment_text: {
+    blog_text: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
@@ -45,4 +45,4 @@ Comment.init({
 })
 
 
-module.exports = Comment;
+module.exports = Blog;
