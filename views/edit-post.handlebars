@@ -1,4 +1,3 @@
-<a href="/layout/dashboard.handlebars" class="go-back"> &larr; Back to dashboard</a>
 
 <article class="new-page">
     <section class="edit-form-page">
@@ -13,19 +12,16 @@
                     <label for="post-title">Title</label>
                     <input type="text" name="post-title" id="post-title" value="{{post.title}}" />
                 </div>
-                <div class="post-content">
-                    <label for="post-content">Content</label>
-                    <textarea class="entry-field" id="post-content" name="post-content">{{post.content}}</textarea>
+                <div class="post-text">
+                    <label for="post-text">Text</label>
+                    <textarea class="entry-field" id="post-text" name="post-text">{{post.text}}</textarea>
                 </div>
-                <button type="submit">Update post</button>
-                <button type="button" class="delete-post-btn">Delete post</button>
+                <button type="submit">Remove post</button>
+                <button type="button" class="delete-post-btn">Edit Post</button>
             </form>
         </div>
     </section>
 </article>
 
-{{#if loggedIn}}
-{{!-- TODO --}}
 <script src="/build/edit-post.js"></script>
 <script src="/build/delete-post.js"></script>
-{{/if}}
