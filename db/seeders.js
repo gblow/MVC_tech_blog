@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const mysql = require('mysql2/promise');
+const mysql = require('mysql2');
 require('dotenv').config();
 
 async function seedDatabase() {
